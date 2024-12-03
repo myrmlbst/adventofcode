@@ -1,6 +1,6 @@
 import re
 
-with open("input.txt") as f:
+with open("input2.txt") as f:
     ls = f.read().strip().split("\n")
 
 ns = [list(map(int, re.findall("\\d+", x))) for x in ls]
