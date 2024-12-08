@@ -14,7 +14,6 @@ dz = -1
 
 while z in board:
     seen.add(z)
-
     if z + dz in walls:
         dz *= -1j
         continue
@@ -42,6 +41,7 @@ def loops(x):
             continue
 
         z += dz
+
     return False
 
 print(sum(map(loops, seen)))
